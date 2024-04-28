@@ -257,6 +257,8 @@ def loginreq(request):
                 session = requests.Session()
 
                 while True:
+                    if username == '' or password == '' or username == None or password == '' or password == None:
+                        break
                     print('while loop')
                     print('test')
                     print(session)
